@@ -1,3 +1,4 @@
+This roku tool was written to allow access to a Roku box from the command line. It also includes a simple GUI.
   Installation  
 ================
 #Linux
