@@ -1,7 +1,5 @@
-Project Structure
-=================
-
-#Quick overview
+Quick overview
+==============
 <ul>
 	<li>Roku.java - Class for interacting directly with a Roku box via HTTP requests.</li>
 	<li>Scan.java - Class for finding Roku devices on the network via SSDP requests.</li>

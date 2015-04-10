@@ -1,8 +1,10 @@
   Installation  
 ================
-To install, simply run `$ sudo ./install` inside of the install directory.
-(conversly, to uninstall you may navigate to the directory it installs to (/etc/roku) and run `$ sudo ./uninstall`)
-Note: the Java JRE is required to run this software.
+Linux:
+	To install, simply run `$ sudo ./install` inside of the install directory.
+	To uninstall you may navigate to the directory it installs to (/etc/roku) and run `$ sudo ./uninstall`.
+Other:
+	This was written with *nix users in mind, but it can be used on other systems. The components are written in Java, so any computer that has the JRE installed can run this by saving Roku.jar somewhere and accessing it with `java -jar Roku.jar`.
 
   Use  
 =======
@@ -17,6 +19,4 @@ Now that you're in the shell (connected or otherwise), run `$ help` for an overv
 
 Simply run the command "x" to control the currently conntected roku with the arrow keys and enter.
 
-Matthew Downey
-<matthewdowney20(at)gmail(dot)com>
 Feel free to contact me with any questions, bugs, or suggestions. 
