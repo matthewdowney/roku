@@ -1,0 +1,45 @@
+#!/bin/bash
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+if [ -d "/etc/roku" ]; then
+	echo "roku is already installed, overwrite? WARNING: this will overwrite /etc/roku [Y/N]:"
+	read YN
+	if [ $YN == "y" -o $YN == "Y" ]; then
+		echo "rm -rf /etc/roku"
+		rm -rf /etc/roku
+	else
+		exit
+	fi
+fi
+if [ -h "/bin/roku" ]; then
+	echo "rm /bin/roku"
+	rm /bin/roku
+fi
+echo "mkdir /etc/roku"
+mkdir /etc/roku
+
+echo "cp roku.jar /etc/roku/roku.jar"
+cp roku.jar /etc/roku/roku.jar
+
+echo "chmod +x /etc/roku/roku.jar"
+chmod +x /etc/roku/roku.jar
+
+echo "cp roku /etc/roku/roku"
+cp roku /etc/roku/roku
+
+echo "cp uninstall /etc/roku/uninstall"
+cp uninstall /etc/roku/uninstall
+
+echo "ln -s /etc/roku/roku /bin/roku"
+ln -s /etc/roku/roku /bin/roku
+
+echo ""
+echo "     _                    "
+echo "  __| | ___  _ __   ___   "
+echo " / _\` |/ _ \| '_ \ / _ \  "
+echo " |(_| | (_) | | | |  __/_ "
+echo " \__,_|\___/|_| |_|\___(_)"
+echo "--------------------------"                          
+

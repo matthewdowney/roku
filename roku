@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar /etc/roku/roku.jar $1
