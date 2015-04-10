@@ -1,10 +1,11 @@
   Installation  
 ================
-Linux:
-	To install, simply run `$ sudo ./install` inside of the install directory.
-	To uninstall you may navigate to the directory it installs to (/etc/roku) and run `$ sudo ./uninstall`.
-Other:
-	This was written with *nix users in mind, but it can be used on other systems. The components are written in Java, so any computer that has the JRE installed can run this by saving Roku.jar somewhere and accessing it with `java -jar Roku.jar`.
+#Linux
+To install, simply run `$ sudo ./install` inside of the install directory.
+To uninstall you may navigate to the directory it installs to (/etc/roku) and run `$ sudo ./uninstall`.
+
+#Other OS
+This was written with *nix users in mind, but it can be used on other systems. The components are written in Java, so any computer that has the JRE installed can run this by saving Roku.jar somewhere and accessing it with `java -jar Roku.jar`.
 
   Use  
 =======
